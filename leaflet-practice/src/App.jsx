@@ -7,6 +7,7 @@ import Map2 from "./Map2";
 import MapVector from "./MapVector";
 import ImageOverlayMap from "./ImageOverlayMap";
 import LayersFeatureGroupMap from "./LayersFeatureGroupMap";
+import ToolTipMap from "./ToolTipMap";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <MapVector />
       <ImageOverlayMap />
       <LayersFeatureGroupMap/>
+      <ToolTipMap/>
     </>
   );
 }
