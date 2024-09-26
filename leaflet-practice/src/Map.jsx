@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import './map.css';
 import 'leaflet/dist/leaflet.css';
 import PopupContainer from "./PopupContainer";
+const imageUrl = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScnbUqXz4bNSCzoSWgEdQFFRCm-U6uB_VL5g&s'
 
 const hiddenGems = [
   [51.49, -0.08,'Location 1', 10, 'https://wikipedia.com/'], 
@@ -32,6 +33,7 @@ const Map = () => {
                 <a href={link} target="_blank">
                 More info
               </a>
+              <img src={imageUrl} className="popup-image" />
             </Popup>
           </Marker>
         );
